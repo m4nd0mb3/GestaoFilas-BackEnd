@@ -15,3 +15,10 @@ psycopg2-binary
 
 #for loading environment variables  #new
 python-dotenv
+
+
+#
+pydantic
+
+#hashing              #new
+passlib[bcrypt] 

@@ -8,6 +8,11 @@ load_dotenv(dotenv_path=env_path)
 class Settings:
     PROJECT_NAME:str = "Sistema de Gestão de Filas"
     PROJECT_VERSION: str = "1.0.0"
+    PROJECT_DESCRIPTION: str = """
+    O presente projecto é o 'Core' do Sistema de Gestão de Filas que tem como obejectivo agilizar e facilitar o processo de atendimento ao público (público esse composto por estudante) na Secretaria da Universidade Católica de Angola.
+    """
+
+    API_V1_STR: str = '/api/v1'
 
     POSTGRES_USER : str = os.getenv("POSTGRES_USER")
     POSTGRES_PASSWORD = os.getenv("POSTGRES_PASSWORD")

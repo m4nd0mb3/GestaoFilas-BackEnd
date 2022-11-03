@@ -21,6 +21,6 @@ class StudentModel(Base):
     first_name = Column(String,unique=True,nullable=False)
     last_name = Column(String,unique=True,nullable=False)
     genre = Column(Enum(GenreEnum), nullable=False)
-    priority = Column(Enum(PriorityEnum), default=1, nullable=False)
+    priority = Column(Enum(PriorityEnum), default=PriorityEnum.normal, nullable=False)
     birth_date = Column(Date(), nullable=False)
     is_active = Column(Boolean(),default=True)
